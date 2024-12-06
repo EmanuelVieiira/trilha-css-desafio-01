@@ -50,13 +50,8 @@ section {
   -webkit-background-clip: text;
 }
 
-.banner p {
-  font-size: 1.25rem; /* Tamanho do texto */
-  margin: 16px 0 24px; /* Espaçamento entre elementos */
-}
-
 .banner .logo {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(50, 8, 134, 0.2);
   height: 260px;
   width: 260px;
   margin: auto; /* Centraliza a logo */
@@ -64,6 +59,12 @@ section {
   padding: 16px;
   margin-bottom: 16px;
 }
+.banner p {
+  font-size: 1.25rem; /* Tamanho do texto */
+  margin: 16px 0 24px; /* Espaçamento entre elementos */
+}
+
+
 
 .banner .logo img {
   width: 100%; /* Garante que a imagem ocupe todo o espaço da logo */
@@ -75,15 +76,13 @@ section {
   color: #31A8DD;
   font-size: 1rem;
   font-weight: bold;
-  padding: 16px 32px;
+  padding: 17px 32px;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  background-color: transparent;
-  border-image: linear-gradient(#3BA1CD, #1572B7); /* Borda com gradiente */
-  border-image-slice: 10;
+  letter-spacing: 6px;
+  cursor: pointer; 
+  background-color: black;
   border-radius: 30px; /* Bordas arredondadas */
 }
-
 /* Conteúdo do curso */
 #course-content {
   width: 800px;
@@ -98,42 +97,40 @@ section {
   color: white;
   width: 530px;
   margin: 0 auto 24px;
+  cursor: pointer; 
   border: 1px solid #33A8DB;
   background-color: #252525; /* Fundo escuro para contraste */
   padding: 16px;
+  text-transform: capitalize;
   border-radius: 100px;
   box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7); /* Efeito de sombra interna */
 }
 
 #course-content .modules-list .module span {
-  color: #33A8DB; /* Destaque para os spans */
+  color: #00b3ff; /* Destaque para os spans */
+  font-family: 'Courier New', Courier, monospace;
 }
-
-/* Sessão de transformação */
-#transform-world {
-  height: 560px;
-  background-size: cover;
-  background-image: url("../assets/images/woman-code.png");
-  background-attachment: fixed; /* Imagem fixa ao rolar a página */
-  border-top: 1px solid #33A8DB80;
-  border-bottom: 1px solid #33A8DB80;
-  padding: 200px; /* Adiciona espaçamento interno */
-}
-
-#transform-world p {
-  font-weight: 900;
-  font-size: 2.5rem;
-  text-transform: lowercase;
-  max-width: 250px; /* Limita a largura do texto */
-  text-shadow: 3px 2px #33A8DB; /* Adiciona sombra ao texto */
-}
-
-/* Desafios profissionais */
 #professional-challenges {
   text-align: center;
   width: 800px;
 }
+/* Sessão de transformação */
+#transform-world {
+  height: 580px;
+  background-size: cover;
+  background-image: url("../assets/images/woman-code.png");
+  background-attachment: fixed; /* Imagem fixa ao rolar a página */
+  border-top: 3px solid #33A8DB80;
+  border-bottom: 1px solid #33A8DB80;
+  padding: 230px; /* Adiciona espaçamento interno */
+}
 
+#transform-world p {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  max-width: 270px; /* Limita a largura do texto */
+  text-shadow: 3px 2px #33A8DB; /* Adiciona sombra ao texto */
+}
 #professional-challenges img {
   margin: 32px 0;
 }
@@ -143,7 +140,7 @@ footer {
   padding: 60px 0;
   text-align: center;
   background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
-  border-top: 1px solid #33A8DB80;
+  border-top: 2px solid #33A8DB80;
 }
 
 footer .dio-logo {
